@@ -17,8 +17,8 @@ clean-targets:
     - "dbt_packages"
 
 models:
-  +schema: analytics 
-  +database: my_dbt_project_schema
+  +schema: dbt_schema 
+  +database: my_dbt_project
   snowflake_workshop:
     staging:
       +materialized: view
